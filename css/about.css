@@ -1,0 +1,31 @@
+.container{
+    padding: 0%;
+    margin: 0%;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+    background-color: black;
+    color: white;
+    /* width: 100%; */
+}
+.image-header{
+    margin: 30px 20px; 
+    justify-content: center;
+    align-items: center;
+}
+.image-header > img{
+    height: 500px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.articles{
+    width: 70%;
+    margin-bottom: 20px;
+}
+.plot > h1{
+    font-weight: bold;
+    font-style: italic;
+}

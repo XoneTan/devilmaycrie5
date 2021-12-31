@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <script src="./js/carousel.js"></script>
     <title>Devil May Crie 5</title>
 </head>
 
@@ -28,44 +30,114 @@
                 </li>
             </ul>
         </div>
-        
     </header>
-
+    <!-- <video autoplay muted loop id="myVideo">
+        <source src="assets/video/mainvideo1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video> -->
+    <iframe src="https://youtube.com/embed/_8ZgVrBRjEs?autoplay=1&mute=1&loop=1" frameborder="0"></iframe>
     <div class="container">
         <section class ="main">
-            <h1>
-                <img class ="main-img" src="./assets/logo/DMC5_logo1.png" alt="DMC_logo_with_wings">
-            </h1>
-            <div class ="platform">
-                <p>Available Now On</p>
-                <div class="icon">
-                    <img src="./assets/logo/steam.png" alt="">
-                    <img src="./assets/logo/xboxone.png" alt="">
-                    <img src="./assets/logo/ps4.png" alt="">
+            <div class="ontop">
+                <h1>
+                    <img class ="main-img" src="./assets/logo/DMC5_logo1.png" alt="DMC_logo_with_wings">
+                </h1>
+                <div class ="platform">
+                    <p>Available Now On</p>
+                    <div class="icon">
+                        <img src="./assets/logo/steam.png" alt="">
+                        <img src="./assets/logo/xboxone.png" alt="">
+                        <img src="./assets/logo/ps4.png" alt="">
+                    </div>
+                    <a href="https://www.youtube.com/watch?v=HLUY1nICQRY"><button>Watch Trailer</button></a>
+                    
                 </div>
-                <button>Watch Trailer</button>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="text-container">
+                <h1>ABOUT</h1>
+                <p>Experience an immersive single-player campaign. As a traveler from another world, you will embark on a journey to reunite with your long-lost sibling and unravel the mysteries of Teyvat, and yourself.</p>
             </div>
             
         </section>
-        <section class="about">
-            <h1>ABOUT</h1>
-            <p>lorem ipsum dolor sit amet, consectetur adipisicing</p>
-        </section>
+
         <section class="character">
             <div class="character-image">
                 <div class="text-container">
                     <h1>Characters</h1>
-                    <p>lorem ipsum dolor sit amet, consect adipisicing</p>
+                    <p>Kamisato Ayaka (Japanese: 神里綾華)is a playable Cryo character in Genshin Impact.
+                        
+                    </p>
+                    <p>She is the eldest daughter of the Kamisato Clan and sister of Kamisato Ayato. Being beautiful, elegant, and graceful, the common folk have nothing to bad-mouth Ayaka about. Because of her social status as the eldest daughter of the Kamisato Clan of the Yashiro Commission and as the Shirasagi Himegimi, Ayaka is seen as a model of perfection.</p>
                 </div>
             </div>
-            
-            
         </section>
+
         <section class="system">
-            <h1>SYSTEM</h1>
+            <div class="text-container">
+                <h1>SYSTEM</h1>
+                <img src="assets/messageImage_1640763208017.jpg" alt="system requirements">
+            </div>
+            
         </section>
+
         <section class="game">
-            <h1>GAME</h1>
+            <div class="text-container">
+                <h1>GAME</h1>
+                <div class="center">
+                    <div class="carousel-container">
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575255251.jpg" onload="currentSlide(1)">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575257734.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575311801.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575488724.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575534557.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575276358.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575267258.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575221063.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575222081.jpg">
+                        </div>
+                        <div class="slides">
+                            <img src="./assets/screenshot/2020092417575221927.jpg">
+                        </div>
+                        
+                    
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                            <span class="dot" onclick="currentSlide(5)"></span>
+                            <span class="dot" onclick="currentSlide(6)"></span>
+                            <span class="dot" onclick="currentSlide(7)"></span>
+                            <span class="dot" onclick="currentSlide(8)"></span>
+                            <span class="dot" onclick="currentSlide(9)"></span>
+                            <span class="dot" onclick="currentSlide(10)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 

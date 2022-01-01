@@ -1,0 +1,90 @@
+.title{
+    text-align: center;
+    color: #ffff;
+    padding: 1rem 0rem;
+    border-style: solid;
+    border-color: black;
+}
+
+main{
+    background-color: rgba(100, 100, 100, 0.527);
+    width: 100%;
+}
+
+.home{
+    width: 30%;
+    height: 15%;
+    margin-left: 35%;
+    border-style: solid;
+    border-color: black;
+    padding: 0 auto;
+}
+.dungeonvid{
+    max-width: 100%;
+    height: auto;
+}
+
+.right-side{
+    /* border-style: solid;
+    border-width: .4rem; */
+    /* width: 50%;
+    height: 50%;
+    position: absolute;
+    top:95%; */
+    background-color: rgba(80, 80, 80, 0.842);
+    /* left: 25%; */
+
+}
+
+.left-side{
+    /* position: absolute; */
+    height: auto;
+    /* width: 50%; */
+    /* border-style: solid;
+    border-width: .3rem; */
+    /* top: 40%;
+    left: 25%; */
+    background-color: rgba(80, 80, 80, 0.63);
+}
+
+.right-side > div{
+    padding: 1rem 0;
+    color: rgb(255, 145, 0);
+}
+
+.left-side > div{
+    padding: 1rem 0;
+    color: rgb(255, 145, 0);
+}
+
+.left-side >h5{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+.right-side > h5{
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+}
+
+.spec{
+    color: white;
+    font-weight: bold;
+}
+.important{
+    color:rgb(255, 251, 0);
+}
+
+.left-side > div,h5{
+    margin-left: 1rem;
+}
+
+.right-side > div,h5{
+    margin-left: 1rem;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}

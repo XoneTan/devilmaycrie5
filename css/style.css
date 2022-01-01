@@ -1,59 +1,65 @@
+*{
+  margin: auto 0;
+
+}
+
 body {
-  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgba(51, 51, 51, 0.61);
+  
 }
 .logo{
     width: 20rem;
-
+    padding-top: .5rem;
 }
 .header{
-    display:flex;
-    padding: 1rem 0;
+  /* padding: 2rem 0; */
+  /* padding-bottom: 2rem; */
 }
 
-header {
-  overflow: hidden;
+nav {
+  /* display: inline-block; */
+  /* overflow: hidden; */
+  position: relative;
+  /* position: fixed;
+  z-index: 999; */
+  width: 100%;
   background-color: #333;
 }
-
-header ul {
-  /* float: left; */
-  /* display: block; */
-  display: flex;
-  /* text-align: center; */
-  /* padding: 14px 16px; */
-  text-decoration: none;
-  justify-content: center;
+.navcontent{
+  display: inline;
+  /* top: 50%;  */
+  /* IMPORTANT */
+  /* left: 50%;  */
+  /* IMPORTANT */
 }
 
-header ul > li{
-    list-style: none;
-    margin-left: 6rem;
-    
-}
-
-header ul > li > a{
+nav a{
     color: #fff;
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
-    padding: 2rem 4rem
+    padding: 0rem 2rem;
+    padding-top: 3rem; 
+    /* display: block; */
+    /* position: relative; */
+    /* flex-grow: 1; */
 }
 
-header a:hover {
+nav a:hover {
   background-color: #ddd;
   /*navbar border*/
   background-image:linear-gradient(to right, rgba(53, 48, 48, 0.507),white,rgba(53, 48, 48, 0.507) );
   color: black;
 }
 
-header a.active {
+nav a.active {
   background-color: #04AA6D;
   color: white;
 }
 
-header .icon {
+nav .icon {
   display: none;
 }
 

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/register.css">
+    <script defer src="./js/register.js"></script>
     <title>Devil May Crie 5</title>
 </head>
 
@@ -47,19 +48,33 @@
                 </div>
                 <h2>or</h2>
                 <br>
-                <label for="name">Username:</label><br>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="name">E-Mail Address:</label><br>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="name">Password:</label><br>
-                <input type="text" name="name" id="name">
-                <br>
-                <label for="name">Password Confirmation:</label><br>
-                <input type="text" name="name" id="name"><br>
-                <button class="register">Register Now!</button>
-
+                <form id="form" action="/">
+                    <div class="input-control">
+                        <label for="name">Username</label>
+                    <br>
+                    <input id="name" name="name" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <label for="email">Email</label>
+                    <br>
+                    <input id="email" name="email" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <label for="password">Password</label>
+                    <br>
+                    <input id="password" name="password" type="password">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <label for="passConf">Password Confirmation</label>
+                    <br>
+                    <input id="passConf" name="passConf" type="password">
+                        <div class="error"></div>
+                    </div>
+                    <button type="submit" class="register">Sign Up</button>
+                </form>
             </div>
         </div>        
     </main>

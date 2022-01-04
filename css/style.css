@@ -19,8 +19,9 @@ html{
     padding-top: .5rem;
 }
 .header{
-  /* padding: 2rem 0; */
-  /* padding-bottom: 2rem; */
+  padding: 2rem 0;
+  padding-bottom: 2rem;
+  scroll-snap-align: start;
 }
 
 nav {
@@ -223,7 +224,7 @@ footer{
 
 }
 
-.wording > pre{
+.wording > p{
     color: #ffff;
 }
 

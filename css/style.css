@@ -105,7 +105,10 @@ iframe {
   bottom: 0;
   position: relative;
 }
-
+.main-img{
+  padding-top: 13vh;
+  width: 50vw;
+}
 .main .icon > img {
   width: 10rem;
 }

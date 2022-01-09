@@ -150,3 +150,49 @@ label{
     font-size: 9px;
     height: 13px;
 }
+@media only screen and (max-width: 800px) {
+    .logo{
+        width: 17rem;
+        padding: 0 0;
+        
+    }
+    .logo1{
+        width: 17rem;
+    }
+
+    .navcontent{
+        overflow: hidden;
+        background-color: #333;
+        position: relative;
+    }
+    .navcontent > a{
+        font-size: 115%;
+        padding: 0rem .5rem;
+        /* display: none; */
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        height: 100vh;
+    }
+    .sso{
+        flex-direction: column;
+        align-items: center;
+    }
+    .google{
+        width: 10rem;
+        padding: 0 .5rem;
+        margin-bottom: 1rem;
+    }
+    .fb{
+        width: 10rem;
+        padding: 0 .5rem;
+    }
+    .input-control > input {
+        width: 70%;
+    }
+  }

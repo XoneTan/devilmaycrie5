@@ -169,6 +169,8 @@ iframe {
 }
 
 .text-container > p{
+  max-height: 30vh;
+  overflow: hidden;
   background-color: rgba(5, 5, 5, 0.7);
   margin-right: 35vw;
   text-align: start;

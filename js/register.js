@@ -2,7 +2,11 @@ const form = document.getElementById("form");
 const username = document.getElementById("name");
 const email = document.getElementById("email");
 const pass1 = document.getElementById("password");
-const pass2 = document.getElementById("passConf");
+const address = document.getElementById("address");
+const accept = document.getElementById("accept");
+const radio1 = document.getElementById("male");
+const radio2 = document.getElementById("female");
+const dummy = document.getElementById("dummy");
 
 form.addEventListener("submit", e => {
     e.preventDefault();
@@ -29,16 +33,12 @@ const successMessage = attr => {
     point.classList.remove("error");
 }
 
-const isValidEmail = email => {
-    const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-}
 
 const validateForm = () => {
     const userValue = username.value.trim();
     const emailVal = email.value.trim();
     const pass1Val = pass1.value.trim();
-    const pass2Val = pass2.value.trim();
+    const addr = address.value.trim();
 
     if(userValue === ""){
         errMessage(username, "Username is required");
@@ -47,9 +47,7 @@ const validateForm = () => {
     }
     if(emailVal === '') {
         errMessage(email, 'Email is required');
-    } else if (!isValidEmail(emailVal)) {
-        errMessage(email, 'Provide a valid email address');
-    } else {
+    }else {
         successMessage(email);
     }
     if(pass1Val === '') {
@@ -60,12 +58,22 @@ const validateForm = () => {
         successMessage(pass1);
     }
 
-    if(pass2Val === '') {
-        errMessage(pass2, 'Please confirm your password');
-    } else if (pass2Val !== pass1Val) {
-        errMessage(pass2, "Passwords doesn't match");
-    } else {
-        successMessage(pass2);
+    if(radio1.checked || radio2.checked){
+        successMessage(dummy);
+    }else{
+        errMessage(dummy, 'Please select gender!');
+    }
+
+    if(addr === '') {
+        errMessage(address, 'Address is required');
+    }else {
+        successMessage(address);
+    }
+
+    if(!accept.checked){
+        errMessage(accept, 'Please check the terms and condition!');
+    }else {
+        successMessage(accept);
     }
 
 }

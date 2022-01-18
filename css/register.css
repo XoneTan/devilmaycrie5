@@ -5,12 +5,13 @@ main{
 .box{
     background-color: rgba(78, 78, 78, 0.932);
     width: 75vw;
-    height: 100vh;
+    height: 110vh;
     position: relative;
     left: 12%;
     /* top: 25%; */
     text-align: center;
     border-radius: .5rem;
+    /* margin-bottom: 9rem; */
     /* border: 2px solid #73AD21; */
 }
 .logo1{
@@ -19,7 +20,7 @@ main{
 }
 .sub-box{
     position: relative;
-    top: 5vh;
+    /* top: 5vh; */
 }
 .sub-box > h1{
     /* font-size: 50%; */
@@ -29,6 +30,7 @@ main{
 .sub-box > input{
     margin-bottom: 1.5rem;
 }
+
 .dungeonvid{
     position: absolute;
     width: 100%;
@@ -149,6 +151,16 @@ label{
     color: #ff3860;
     font-size: 9px;
     height: 13px;
+}
+
+.input-checkbox .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
+footer{
+    margin-top: 2rem!important;
 }
 @media only screen and (max-width: 800px) {
     .logo{

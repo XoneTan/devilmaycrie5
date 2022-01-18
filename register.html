@@ -50,10 +50,22 @@
                 <br>
                 <form id="form" action="/">
                     <div class="input-control">
-                        <label for="name">Username</label>
+                        <label for="name">Full Name</label>
                     <br>
                     <input id="name" name="name" type="text">
                         <div class="error"></div>
+                    </div>
+                    <div class="input-control">
+                        <label for="gender">Gender</label>
+                        <input type="hidden" name="dummy" id="dummy">
+                        <br>
+                        <div class="radio-control">
+                            <input id="male" name="gender" type="radio">
+                            <label for="male">Male</label>
+                            <input id="female" name="gender" type="radio">
+                            <label for="female">Female</label>
+                        </div>
+                            <div class="error"></div>
                     </div>
                     <div class="input-control">
                         <label for="email">Email</label>
@@ -68,9 +80,14 @@
                         <div class="error"></div>
                     </div>
                     <div class="input-control">
-                        <label for="passConf">Password Confirmation</label>
+                        <label for="address">Address</label>
                     <br>
-                    <input id="passConf" name="passConf" type="password">
+                    <input id="address" name="address" type="text">
+                        <div class="error"></div>
+                    </div>
+                    <div class="input-checkbox">
+                        <input type="checkbox" id="accept" name="accept">
+                        <label for="accept">Agree Terms and Condition</label>
                         <div class="error"></div>
                     </div>
                     <button type="submit" class="register">Sign Up</button>
